@@ -1,0 +1,11 @@
+program SomaSimples;
+
+var
+  a, b, soma: integer;
+
+begin
+  a := 10;
+  b := 20;
+  soma := a + b;
+  writeln('A soma de ', a, ' e ', b, ' eh: ', soma);
+end.
