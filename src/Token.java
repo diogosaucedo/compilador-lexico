@@ -1,5 +1,6 @@
 /**
  * Classe que representa um token identificado durante a análise léxica
+ * 
  * @author Diogo Ferreira Saucedo
  */
 public class Token {
