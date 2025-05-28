@@ -2,6 +2,7 @@ import java.util.*;
 
 /**
  * Analisador léxico para a linguagem Pascal simplificada
+ * @author Diogo Ferreira Saucedo
  */
 public class AnalisadorLexico {
     private String codigo;

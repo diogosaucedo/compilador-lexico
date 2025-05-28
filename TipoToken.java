@@ -1,5 +1,6 @@
 /**
  * Enumeração que define os tipos de tokens reconhecidos pelo analisador léxico
+ * @author Diogo Ferreira Saucedo
  */
 public enum TipoToken {
     // Palavras reservadas

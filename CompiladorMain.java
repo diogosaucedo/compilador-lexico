@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * Classe principal do compilador léxico para Pascal
+ * @author Diogo Ferreira Saucedo
  */
 public class CompiladorMain {
     public static void main(String[] args) {

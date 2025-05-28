@@ -2,6 +2,7 @@ import java.util.*;
 
 /**
  * Classe que gerencia a tabela de símbolos do compilador
+ * @author Diogo Ferreira Saucedo
  */
 public class TabelaSimbolos {
     private Map<String, Simbolo> tabela;

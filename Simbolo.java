@@ -1,5 +1,6 @@
 /**
  * Classe que representa um símbolo na tabela de símbolos
+ * @author Diogo Ferreira Saucedo
  */
 public class Simbolo {
     private String nome;
