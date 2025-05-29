@@ -76,7 +76,7 @@ compilador-lexico/
 # Compilar todas as classes
 javac *.java
 
-# Ou usar o script (Windows)
+# Ou usar o script (Windows) - compila, executa e gera JAR
 compilar_e_executar.bat
 ```
 
@@ -97,6 +97,13 @@ java CompiladorMain <nome_do_arquivo>
 java CompiladorMain Programa_Fonte.txt
 java CompiladorMain Programa_Simples.txt
 java CompiladorMain Programa_Correto.txt
+```
+
+#### Executar via JAR (após usar o script bat)
+
+```bash
+# Na pasta raiz do projeto
+java -jar compilador-lexico.jar
 ```
 
 #### Executar todos os testes
