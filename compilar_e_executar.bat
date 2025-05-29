@@ -1,6 +1,10 @@
 @echo off
 echo === Compilando o Compilador Lexico ===
-javac *.java
+javac -d out ./src/*.java
+
+echo Copiando arquivos de configuracao...
+copy src\*.txt out\ >nul 2>&1
+
 
 if %errorlevel% neq 0 (
     echo Erro na compilacao!
@@ -11,7 +15,9 @@ if %errorlevel% neq 0 (
 echo Compilacao bem-sucedida!
 echo.
 echo === Executando o Compilador ===
+cd out
 java CompiladorMain
+cd ..
 
 echo.
 echo === Execucao concluida ===
