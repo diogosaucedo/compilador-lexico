@@ -1,0 +1,41 @@
+program Calculadora;
+
+var
+  x, y, resultado: integer;
+  opcao: char;
+
+begin
+  writeln('=== Calculadora Simples ===');
+  write('Digite o primeiro numero: ');
+  readln(x);
+  write('Digite o segundo numero: ');
+  readln(y);
+  
+  write('Digite a operacao (+, -, *, /): ');
+  readln(opcao);
+  
+  if opcao = '+' then
+    resultado := x + y
+  else if opcao = '-' then
+    resultado := x - y
+  else if opcao = '*' then
+    resultado := x * y
+  else if opcao = '/' then
+  begin
+    if y <> 0 then
+      resultado := x div y
+    else
+    begin
+      writeln('Erro: Divisao por zero!');
+      resultado := 0;
+    end;
+  end
+  else
+  begin
+    writeln('Operacao invalida!');
+    resultado := 0;
+  end;
+  
+  writeln('Resultado: ', resultado);
+  writeln('Fim do programa.');
+end.

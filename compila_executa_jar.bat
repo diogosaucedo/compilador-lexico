@@ -21,4 +21,12 @@ cd ..
 
 echo.
 echo === Execucao concluida ===
-pause
+
+echo === Gerando Jar ===
+cd out
+echo Main-Class: CompiladorMain > manifest.txt
+echo. >> manifest.txt
+jar cvfm ../compilador-lexico.jar manifest.txt *.class
+del manifest.txt
+cd ..
+
